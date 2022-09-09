@@ -1,5 +1,5 @@
 description: A Docker environment with Portainer and related tools
-version: test-workspace
+version: test-workspace1
 
 runs-on:
 - arm
@@ -10,6 +10,7 @@ runs-on:
 
 aliases:
   docker: docker:docker
+  docker-compose: docker:docker-compose
 
 instances:
   docker:
@@ -95,6 +96,7 @@ instances:
         - docker-ce
         - docker-ce-cli
         - containerd.io
+        - docker-compose
         - jq
         - qemu-user-static
         - skopeo
